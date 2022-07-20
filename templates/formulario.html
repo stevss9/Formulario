@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!--Contenedor de nuestro formulario-->
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <!--Cabezera de nuestro formulario-->
+                <h3 class="panel-title">CONTAC FORM</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" id="signupForm">
+                    <!--Solicitamos el nombre al usuario-->
+                    <div class="form-group">
+                        <label for="fullname" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="fullname" name="fullname" class="form-control">
+                        </div>
+                    </div>
+                    <!--Solicitamos el email al usuario-->
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                    <!--Solicitamos el tema al usuario-->
+                    <div class="form-group">
+                        <label for="tema" class="col-sm-2 control-label">Subject</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="tema" name="tema" class="form-control">
+                        </div>
+                    </div>
+                    <!--Solicitamos el mensaje al usuario-->
+                    <div class="form-group">
+                        <label for="comments" class="col-sm-2 control-label">Mensaje</label>
+                        <div class="col-sm-10">
+                            <textarea name="comments" id="comments" cols="40" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <!--Solicitamos que el usuario escriba el captcha-->
+                    <div class="form-group">
+                        <label for="capcha" class="col-sm-2 control-label">Captcha</label>
+                        <div class="col-sm-3">
+                            <img src="https://www.pandasecurity.com/es/mediacenter/src/uploads/2014/09/evitar-captcha.jpg"
+                                alt="" width="200px" height="50px"><br><br>
+                            <input type="text" id="capcha" name="capcha" class="form-control">
+                        </div>
+                    </div>
+                    <!--Solicitamos que el usuario acepte los terminos y condiciones-->
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label> <input type="checkbox" id="agree" name="agree" value="agree">Send me a copy of
+                                    this message</label>
+                            </div>
+                            <em id="agree-error" class="help-block"></em>
+                        </div>
+                    </div>
+                    <!--Boton de enviar mensaje-->
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input type="submit" class="btn btn-primary" value="Send message" />
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <script src="./static/JavaScript/script.js"></script>
+</body>
+
+</html>
